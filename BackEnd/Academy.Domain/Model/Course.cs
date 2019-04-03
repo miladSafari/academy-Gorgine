@@ -1,4 +1,8 @@
-﻿namespace Academy.Domain.Model
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Academy.Domain.Model
 {
     public class Course
     {

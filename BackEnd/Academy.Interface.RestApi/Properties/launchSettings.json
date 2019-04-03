@@ -4,7 +4,7 @@
     "windowsAuthentication": false, 
     "anonymousAuthentication": true, 
     "iisExpress": {
-      "applicationUrl": "http://localhost:56557",
+      "applicationUrl": "http://localhost:51456",
       "sslPort": 0
     }
   },
@@ -17,7 +17,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "Academy_Interface_Gorgin": {
+    "Academy.Interface.RestApi": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "api/values",
