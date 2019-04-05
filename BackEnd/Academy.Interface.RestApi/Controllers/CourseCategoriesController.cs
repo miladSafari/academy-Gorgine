@@ -11,10 +11,15 @@ namespace Academy.Interface.RestApi.Controllers
     [ApiController]
     public class CourseCategoriesController : ControllerBase
     {
+        private readonly ICourseCategoryService _service;
+        public CourseCategoriesController(ICourseCategoryService service)
+        {
+            this._service = service;
+        }
+        [HttpPost]
         public void Post()
         {
-            var service = new CourseCategoryService();
-            service.Create("Web API");
+            _service.Create("milad");
         }
     }
 }

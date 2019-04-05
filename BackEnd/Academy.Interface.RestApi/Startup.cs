@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Academy.Application.Services;
+using Academy.Config;
+using Academy.Domain.IRepositories;
+using Academy.Persistence.Ef.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -25,6 +29,7 @@ namespace Academy.Interface.RestApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            AcademyBootstrapper.WireUp(services);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
